@@ -3,7 +3,7 @@
 /* == Step 1: Base Constructor ==
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
-class CuboidMaker {
+class CuboidMaker1 {
     constructor(att) {
         this.length = att.length;
         this.width = att.width;
@@ -18,7 +18,7 @@ class CuboidMaker {
      }
 }
 
-class CubeMaker extends CuboidMaker {
+class CubeMaker extends CuboidMaker1 {
     constructor(att) {
         super(att);
     }
@@ -27,22 +27,22 @@ class CubeMaker extends CuboidMaker {
     }
 }
 
-const cuboid = new CuboidMaker({
+const cuboid1 = new CuboidMaker1({
     length: 4,
     width: 5,
     height: 5,
 });
 
-const cubes = new CubeMaker({
+const cubes1 = new CubeMaker({
     length: 4,
     width: 5,
     height: 5,
 })
 
-// Test your volume and surfaceArea methods by uncommenting the logs below:
+// Test your volume and surfaceArea methods by un-commenting the logs below:
 console.log("Testing Prototype Refactoring to Class")
-console.log(cuboid.volume()); // 100
-console.log(cuboid.surfaceArea()); // 130
+console.log(cuboid1.volume()); // 100
+console.log(cuboid1.surfaceArea()); // 130
 
 
 
@@ -50,6 +50,6 @@ console.log(cuboid.surfaceArea()); // 130
 // Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  
 // Test your work by logging out your volume and surface area.
 console.log("Testing Sub Class CubeMaker")
-console.log(cubes.testing());//I am testing cubeMaker Class!
-console.log(cubes.volume());//100
-console.log(cubes.surfaceArea());//13
+console.log(cubes1.testing());//I am testing cubeMaker Class!
+console.log(cubes1.volume());//100
+console.log(cubes1.surfaceArea());//13
