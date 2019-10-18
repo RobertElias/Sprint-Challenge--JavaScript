@@ -1,5 +1,5 @@
 # Sprint Challenge: JavaScript Fundamentals
-
+# Robert Elias
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a survey of problems. This Sprint explored JavaScript Fundamentals. During this Sprint, you studied variables, functions, object literals, arrays, this keyword, prototypes, and class syntax. In your challenge this week, you will demonstrate proficiency by completing a survey of JavaScript problems.
 
 ## Instructions
@@ -30,13 +30,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+# The difference is that .forEach() method calls a function once for each element in an array in the specific order. .map() method creates a new array with the results of calling a function for every array element in addition it call the provided function once for each elements in an array in order. 
+
 2. What is the difference between a function and a method?
+
+# A function is an object in javascript a method is a function that belongs to a class in JavaScript and similarly a method is function that belongs to an object. 
 
 3. What is closure?
 
+# A closure is the combination of a function bundled together with references to its surrounding environment. A closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
 4. Describe the four rules of the 'this' keyword.
+# 1-Default Binding: this refers to Window Object 
+# 2-Implicit Binding: The object that is standing before the dot is what this keyword is bound to.
+# 3-Explicit Binding: you can force a function call to use a particular object for this binding, without putting a property function reference on the object. so we explicitly say to a function what object it should use for this — using functions such as .call, .apply and bind .
+# 4- New Binding: 1- An empty object is created and referenced by this variable, inheriting the prototype of the function. 2- Properties and methods are added to the object referenced by this. 3- The newly created object referenced by this is returned at the end implicitly (if no other object was returned explicitly).
 
 5. Why do we need super() in an extended class?
+# The super keyword is used in two ways because the super keyword is used as a “function” which calls the parent class passing its parameters. It is used to access and call functions on an object parent.
 
 ## Project Set up
 
