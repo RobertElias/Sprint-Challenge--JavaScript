@@ -47,6 +47,7 @@ Edit this document to include your answers after each question. Make sure to lea
 # 4- New Binding: 1- An empty object is created and referenced by this variable, inheriting the prototype of the function. 2- Properties and methods are added to the object referenced by this. 3- The newly created object referenced by this is returned at the end implicitly (if no other object was returned explicitly).
 
 5. Why do we need super() in an extended class?
+# The super keyword is used in two ways because the super keyword is used as a “function” which calls the parent class passing its parameters. It is used to access and call functions on an object parent.
 
 ## Project Set up
 
